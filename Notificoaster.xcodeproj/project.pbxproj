@@ -13,6 +13,8 @@
 		FB152EFD23148B7E00297843 /* UIButton-Notificoaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */; };
 		FB2A818D221B5FA4003C7D26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2A818C221B5FA4003C7D26 /* Localizable.strings */; };
 		FB2A818F221B6392003C7D26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A818E221B6392003C7D26 /* Constants.swift */; };
+		FB31C4902321EBB800279EDD /* MainScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31C48F2321EBB800279EDD /* MainScreen.png */; };
+		FB31C4922321ED2900279EDD /* LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31C4912321ED2900279EDD /* LoginScreen.png */; };
 		FB6B6F752315D5F4006BFE87 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F742315D5F4006BFE87 /* Session.swift */; };
 		FB6B6F78231600B0006BFE87 /* Notificoaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F76231600B0006BFE87 /* Notificoaster.xcdatamodeld */; };
 		FB9DDC6621C8540800875641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6521C8540800875641 /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 		FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Notificoaster.swift"; sourceTree = "<group>"; };
 		FB2A818C221B5FA4003C7D26 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		FB2A818E221B6392003C7D26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB31C48F2321EBB800279EDD /* MainScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreen.png; sourceTree = "<group>"; };
+		FB31C4912321ED2900279EDD /* LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreen.png; sourceTree = "<group>"; };
 		FB6B6F742315D5F4006BFE87 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notificoaster.xcdatamodel; sourceTree = "<group>"; };
 		FB9DDC6221C8540800875641 /* Notificoaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notificoaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB31C48E2321EB9600279EDD /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				FB31C4912321ED2900279EDD /* LoginScreen.png */,
+				FB31C48F2321EBB800279EDD /* MainScreen.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		FB9DDC5921C8540800875641 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +124,7 @@
 				FBF0A0DC21EEAC4B00D22918 /* Reading.swift */,
 				FBF0A0DE21EEAC5900D22918 /* ReadingRequest.swift */,
 				FB9DDC6721C8540800875641 /* ReadingViewController.swift */,
+				FB31C48E2321EB9600279EDD /* Screenshots */,
 				FB6B6F742315D5F4006BFE87 /* Session.swift */,
 				FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */,
 				FB152EFA23148B5D00297843 /* UIColor-Notificoaster.swift */,
@@ -190,6 +204,8 @@
 				FB9DDC7021C8540900875641 /* LaunchScreen.storyboard in Resources */,
 				FB2A818D221B5FA4003C7D26 /* Localizable.strings in Resources */,
 				FB9DDC6D21C8540900875641 /* Assets.xcassets in Resources */,
+				FB31C4922321ED2900279EDD /* LoginScreen.png in Resources */,
+				FB31C4902321EBB800279EDD /* MainScreen.png in Resources */,
 				FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
