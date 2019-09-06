@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		627D29F1D0810FCC56EAC024 /* Pods_Notificoaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE50AADF9BB1CF9A256A41B6 /* Pods_Notificoaster.framework */; };
+		FB152EF9231482B800297843 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB152EF8231482B800297843 /* LoginViewController.swift */; };
+		FB152EFB23148B5D00297843 /* UIColor-Notificoaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB152EFA23148B5D00297843 /* UIColor-Notificoaster.swift */; };
+		FB152EFD23148B7E00297843 /* UIButton-Notificoaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */; };
+		FB2A818D221B5FA4003C7D26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB2A818C221B5FA4003C7D26 /* Localizable.strings */; };
+		FB2A818F221B6392003C7D26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A818E221B6392003C7D26 /* Constants.swift */; };
+		FB6B6F752315D5F4006BFE87 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F742315D5F4006BFE87 /* Session.swift */; };
+		FB6B6F78231600B0006BFE87 /* Notificoaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F76231600B0006BFE87 /* Notificoaster.xcdatamodeld */; };
+		FB9DDC6621C8540800875641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6521C8540800875641 /* AppDelegate.swift */; };
+		FB9DDC6821C8540800875641 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6721C8540800875641 /* ReadingViewController.swift */; };
+		FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6921C8540800875641 /* Main.storyboard */; };
+		FB9DDC6D21C8540900875641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6C21C8540900875641 /* Assets.xcassets */; };
+		FB9DDC7021C8540900875641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6E21C8540900875641 /* LaunchScreen.storyboard */; };
+		FBEA1E382317355100ADEC42 /* UIFont-Notificoaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEA1E372317355100ADEC42 /* UIFont-Notificoaster.swift */; };
+		FBF0A0DD21EEAC4B00D22918 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A0DC21EEAC4B00D22918 /* Reading.swift */; };
+		FBF0A0DF21EEAC5900D22918 /* ReadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A0DE21EEAC5900D22918 /* ReadingRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FE231EFAE5D423550DEC201 /* Pods-Notificoaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notificoaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notificoaster/Pods-Notificoaster.release.xcconfig"; sourceTree = "<group>"; };
+		8600118B00147A9671A0A46A /* Pods-Notificoaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notificoaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notificoaster/Pods-Notificoaster.debug.xcconfig"; sourceTree = "<group>"; };
+		FB152EF8231482B800297843 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB152EFA23148B5D00297843 /* UIColor-Notificoaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Notificoaster.swift"; sourceTree = "<group>"; };
+		FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-Notificoaster.swift"; sourceTree = "<group>"; };
+		FB2A818C221B5FA4003C7D26 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FB2A818E221B6392003C7D26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB6B6F742315D5F4006BFE87 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notificoaster.xcdatamodel; sourceTree = "<group>"; };
+		FB9DDC6221C8540800875641 /* Notificoaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notificoaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9DDC6521C8540800875641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB9DDC6721C8540800875641 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		FB9DDC6A21C8540800875641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB9DDC6C21C8540900875641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB9DDC6F21C8540900875641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB9DDC7121C8540900875641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEA1E372317355100ADEC42 /* UIFont-Notificoaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont-Notificoaster.swift"; sourceTree = "<group>"; };
+		FBF0A0DC21EEAC4B00D22918 /* Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
+		FBF0A0DE21EEAC5900D22918 /* ReadingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRequest.swift; sourceTree = "<group>"; };
+		FE50AADF9BB1CF9A256A41B6 /* Pods_Notificoaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notificoaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB9DDC5F21C8540800875641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627D29F1D0810FCC56EAC024 /* Pods_Notificoaster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		993394F9CC75A1593C505AED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8600118B00147A9671A0A46A /* Pods-Notificoaster.debug.xcconfig */,
+				1FE231EFAE5D423550DEC201 /* Pods-Notificoaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB18D5A721F1A50400DAB675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE50AADF9BB1CF9A256A41B6 /* Pods_Notificoaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9DDC5921C8540800875641 = {
+			isa = PBXGroup;
+			children = (
+				FB9DDC6421C8540800875641 /* Notificoaster */,
+				FB18D5A721F1A50400DAB675 /* Frameworks */,
+				993394F9CC75A1593C505AED /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FB9DDC6321C8540800875641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB9DDC6221C8540800875641 /* Notificoaster.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FB9DDC6421C8540800875641 /* Notificoaster */ = {
+			isa = PBXGroup;
+			children = (
+				FB9DDC6521C8540800875641 /* AppDelegate.swift */,
+				FB9DDC6C21C8540900875641 /* Assets.xcassets */,
+				FB2A818E221B6392003C7D26 /* Constants.swift */,
+				FB9DDC7121C8540900875641 /* Info.plist */,
+				FB9DDC6E21C8540900875641 /* LaunchScreen.storyboard */,
+				FB2A818C221B5FA4003C7D26 /* Localizable.strings */,
+				FB152EF8231482B800297843 /* LoginViewController.swift */,
+				FB9DDC6921C8540800875641 /* Main.storyboard */,
+				FB6B6F76231600B0006BFE87 /* Notificoaster.xcdatamodeld */,
+				FB9DDC6321C8540800875641 /* Products */,
+				FBF0A0DC21EEAC4B00D22918 /* Reading.swift */,
+				FBF0A0DE21EEAC5900D22918 /* ReadingRequest.swift */,
+				FB9DDC6721C8540800875641 /* ReadingViewController.swift */,
+				FB6B6F742315D5F4006BFE87 /* Session.swift */,
+				FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */,
+				FB152EFA23148B5D00297843 /* UIColor-Notificoaster.swift */,
+				FBEA1E372317355100ADEC42 /* UIFont-Notificoaster.swift */,
+			);
+			path = Notificoaster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB9DDC6121C8540800875641 /* Notificoaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9DDC7421C8540900875641 /* Build configuration list for PBXNativeTarget "Notificoaster" */;
+			buildPhases = (
+				0D540D8C84C923CA1DA35F98 /* [CP] Check Pods Manifest.lock */,
+				FB9DDC5E21C8540800875641 /* Sources */,
+				FB9DDC5F21C8540800875641 /* Frameworks */,
+				FB9DDC6021C8540800875641 /* Resources */,
+				AA2EF0B2B0CA785E32506587 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notificoaster;
+			productName = Notificoaster;
+			productReference = FB9DDC6221C8540800875641 /* Notificoaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB9DDC5A21C8540800875641 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Scott Hetland";
+				TargetAttributes = {
+					FB9DDC6121C8540800875641 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FB9DDC5D21C8540800875641 /* Build configuration list for PBXProject "Notificoaster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB9DDC5921C8540800875641;
+			productRefGroup = FB9DDC6321C8540800875641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB9DDC6121C8540800875641 /* Notificoaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB9DDC6021C8540800875641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9DDC7021C8540900875641 /* LaunchScreen.storyboard in Resources */,
+				FB2A818D221B5FA4003C7D26 /* Localizable.strings in Resources */,
+				FB9DDC6D21C8540900875641 /* Assets.xcassets in Resources */,
+				FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D540D8C84C923CA1DA35F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notificoaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2EF0B2B0CA785E32506587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Notificoaster/Pods-Notificoaster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notificoaster/Pods-Notificoaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB9DDC5E21C8540800875641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6B6F752315D5F4006BFE87 /* Session.swift in Sources */,
+				FB152EF9231482B800297843 /* LoginViewController.swift in Sources */,
+				FB9DDC6821C8540800875641 /* ReadingViewController.swift in Sources */,
+				FB152EFB23148B5D00297843 /* UIColor-Notificoaster.swift in Sources */,
+				FB6B6F78231600B0006BFE87 /* Notificoaster.xcdatamodeld in Sources */,
+				FB9DDC6621C8540800875641 /* AppDelegate.swift in Sources */,
+				FBF0A0DF21EEAC5900D22918 /* ReadingRequest.swift in Sources */,
+				FB152EFD23148B7E00297843 /* UIButton-Notificoaster.swift in Sources */,
+				FBEA1E382317355100ADEC42 /* UIFont-Notificoaster.swift in Sources */,
+				FBF0A0DD21EEAC4B00D22918 /* Reading.swift in Sources */,
+				FB2A818F221B6392003C7D26 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FB9DDC6921C8540800875641 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9DDC6A21C8540800875641 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB9DDC6E21C8540900875641 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB9DDC6F21C8540900875641 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB9DDC7221C8540900875641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB9DDC7321C8540900875641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB9DDC7521C8540900875641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8600118B00147A9671A0A46A /* Pods-Notificoaster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notificoaster/Notificoaster.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKL35Z4U9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Notificoaster",
+				);
+				INFOPLIST_FILE = Notificoaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott874.Notificoaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB9DDC7621C8540900875641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE231EFAE5D423550DEC201 /* Pods-Notificoaster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Notificoaster/Notificoaster.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GKL35Z4U9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Notificoaster",
+				);
+				INFOPLIST_FILE = Notificoaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott874.Notificoaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB9DDC5D21C8540800875641 /* Build configuration list for PBXProject "Notificoaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9DDC7221C8540900875641 /* Debug */,
+				FB9DDC7321C8540900875641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9DDC7421C8540900875641 /* Build configuration list for PBXNativeTarget "Notificoaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9DDC7521C8540900875641 /* Debug */,
+				FB9DDC7621C8540900875641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FB6B6F76231600B0006BFE87 /* Notificoaster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */,
+			);
+			currentVersion = FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */;
+			path = Notificoaster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB9DDC5A21C8540800875641 /* Project object */;
+}

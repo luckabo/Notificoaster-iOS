@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Notificoaster
+
+  Created by Scott Hetland on 2019-02-18.
+  Copyright © 2019 Scott Hetland. All rights reserved.
+*/
+
+// LoginViewController
+
+"LOGIN TITLE LABEL" = "Notificoaster";
+"LOGIN EMAIL FIELD PLACEHOLDER" = "email address";
+"LOGIN PASSWORD FIELD PLACEHOLDER" = "password";
+"LOGIN BUTTON TITLE" = "Login";
+
+
+// ReadingViewController
+
+"VALUE LABEL INITIAL TEXT 0" = "11°C";
+"VALUE LABEL INITIAL TEXT 1" = "-";
+"VALUE LABEL INITIAL TEXT 2" = "";
+
+"DESCRIPTION LABEL INITIAL TEXT 0" = "Target";
+"DESCRIPTION LABEL INITIAL TEXT 1" = "Temperature";
+"DESCRIPTION LABEL INITIAL TEXT 2" = "";
+
+
