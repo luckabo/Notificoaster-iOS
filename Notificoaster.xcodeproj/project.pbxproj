@@ -17,6 +17,7 @@
 		FB31C4922321ED2900279EDD /* LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31C4912321ED2900279EDD /* LoginScreen.png */; };
 		FB6B6F752315D5F4006BFE87 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F742315D5F4006BFE87 /* Session.swift */; };
 		FB6B6F78231600B0006BFE87 /* Notificoaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F76231600B0006BFE87 /* Notificoaster.xcdatamodeld */; };
+		FB8FC49B23248AB900B7D40E /* Devnotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB8FC49A23248AB900B7D40E /* Devnotes.txt */; };
 		FB9DDC6621C8540800875641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6521C8540800875641 /* AppDelegate.swift */; };
 		FB9DDC6821C8540800875641 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6721C8540800875641 /* ReadingViewController.swift */; };
 		FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6921C8540800875641 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		FB31C4912321ED2900279EDD /* LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreen.png; sourceTree = "<group>"; };
 		FB6B6F742315D5F4006BFE87 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notificoaster.xcdatamodel; sourceTree = "<group>"; };
+		FB8FC49A23248AB900B7D40E /* Devnotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Devnotes.txt; sourceTree = "<group>"; };
 		FB9DDC6221C8540800875641 /* Notificoaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notificoaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9DDC6521C8540800875641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9DDC6721C8540800875641 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				FB9DDC6521C8540800875641 /* AppDelegate.swift */,
 				FB9DDC6C21C8540900875641 /* Assets.xcassets */,
 				FB2A818E221B6392003C7D26 /* Constants.swift */,
+				FB8FC49A23248AB900B7D40E /* Devnotes.txt */,
 				FB9DDC7121C8540900875641 /* Info.plist */,
 				FB9DDC6E21C8540900875641 /* LaunchScreen.storyboard */,
 				FB2A818C221B5FA4003C7D26 /* Localizable.strings */,
@@ -209,6 +212,7 @@
 				FB9DDC6D21C8540900875641 /* Assets.xcassets in Resources */,
 				FB31C4922321ED2900279EDD /* LoginScreen.png in Resources */,
 				FB31C4902321EBB800279EDD /* MainScreen.png in Resources */,
+				FB8FC49B23248AB900B7D40E /* Devnotes.txt in Resources */,
 				FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
