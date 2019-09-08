@@ -17,6 +17,7 @@ class ReadingViewController: UIViewController
     @IBOutlet var valueLabels : [UILabel] = []
     @IBOutlet var descriptionLabels : [UILabel] = []
     @IBOutlet var lineChartView : LineChartView!
+    @IBOutlet weak var updateTemperatureButton: UIBarButtonItem!
     
     var readingArray = [Reading]();
     var deviceId: String = ""
@@ -34,8 +35,15 @@ class ReadingViewController: UIViewController
         formatter.dateFormat = "h:mm a"
         return formatter
     }()
-
     
+    @objc func updateTemperature(sender:UIButton)
+    {
+        let modalViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "temperatureUpdateViewController") as! TemperatureUpdateViewController
+        modalViewController.targetTemperature = Constants.TargetTemperature // this will need to be updated
+        modalViewController.modalPresentationStyle = .overCurrentContext
+        self.present(modalViewController, animated: true, completion: nil)
+    }
+
     @objc func requestReadings() -> Void
     {
         ReadingRequest().getReadings(deviceId: deviceId, completion: { (readings) -> Void in
@@ -68,8 +76,8 @@ class ReadingViewController: UIViewController
         let dataSet = LineChartDataSet(values: values, label: nil)
         
         // make straight horizontal line dataset of two items
-        let horizontalPoint1 = ChartDataEntry(x: 0, y: Constants.TargetTemperature)
-        let horizontalPoint2 = ChartDataEntry(x: (values.last?.x)!, y: Constants.TargetTemperature)
+        let horizontalPoint1 = ChartDataEntry(x: 0, y: Double(Constants.TargetTemperature))
+        let horizontalPoint2 = ChartDataEntry(x: (values.last?.x)!, y: Double(Constants.TargetTemperature))
         let dataSet2 = LineChartDataSet(values: [horizontalPoint1, horizontalPoint2], label: nil)
 
         
@@ -176,5 +184,10 @@ class ReadingViewController: UIViewController
         // Fire a timer to keep requesting new information from data table
         let readingRequestTimer = Timer.scheduledTimer(timeInterval: intervalTime, target: self, selector: #selector(self.requestReadings), userInfo: nil, repeats: true)
         readingRequestTimer.fire()
+        
+        // Add target to the update temperature button
+        updateTemperatureButton.title = NSLocalizedString("NAVIGATION BAR RIGHT BUTTON TITLE", comment: "")
+        updateTemperatureButton.target = self
+        updateTemperatureButton.action = #selector(updateTemperature)
     }
 }

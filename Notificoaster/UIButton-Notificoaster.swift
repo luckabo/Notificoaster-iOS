@@ -10,7 +10,7 @@ import UIKit
 
 extension UIButton
 {
-    func loginButtonStyling(font: UIFont, height: CGFloat)
+    func confirmButtonStyling(font: UIFont, height: CGFloat)
     {
         titleLabel?.font = font
         setTitleColor(UIColor.white, for: .normal)

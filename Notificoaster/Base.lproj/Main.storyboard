@@ -84,9 +84,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5r9-Jd-Eip"/>
+                    <navigationItem key="navigationItem" id="5r9-Jd-Eip">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="7ij-FB-6rV"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="lineChartView" destination="oxd-Ta-8Tw" id="9R5-bF-E7C"/>
+                        <outlet property="updateTemperatureButton" destination="7ij-FB-6rV" id="cwp-cj-EP0"/>
                         <outletCollection property="valueLabels" destination="4Gm-4s-b0I" collectionClass="NSMutableArray" id="Fb4-ic-Pc1"/>
                         <outletCollection property="valueLabels" destination="cW3-R5-H8Q" collectionClass="NSMutableArray" id="ogd-zs-lMd"/>
                         <outletCollection property="valueLabels" destination="ePL-3o-TIp" collectionClass="NSMutableArray" id="G7r-0m-lN8"/>
@@ -98,6 +101,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1296" y="131"/>
+        </scene>
+        <!--Temperature Update View Controller-->
+        <scene sceneID="oER-qc-gH9">
+            <objects>
+                <viewController storyboardIdentifier="temperatureUpdateViewController" id="SOs-aM-dcW" customClass="TemperatureUpdateViewController" customModule="Notificoaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6P1-UA-cY9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3U-jc-BMX">
+                                <rect key="frame" x="8" y="220" width="304" height="128"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="9" minValue="3" maxValue="18" translatesAutoresizingMaskIntoConstraints="NO" id="GRS-Qo-ES7">
+                                        <rect key="frame" x="6" y="49" width="292" height="31"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWL-BX-YkF">
+                                        <rect key="frame" x="8" y="8" width="288" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRN-CN-Gsu">
+                                        <rect key="frame" x="8" y="90" width="288" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mRN-CN-Gsu" secondAttribute="bottom" constant="8" id="2dB-1r-PMI"/>
+                                    <constraint firstItem="GRS-Qo-ES7" firstAttribute="leading" secondItem="v3U-jc-BMX" secondAttribute="leading" constant="8" id="6oC-CN-y23"/>
+                                    <constraint firstAttribute="trailing" secondItem="TWL-BX-YkF" secondAttribute="trailing" constant="8" id="DFX-u8-ZYt"/>
+                                    <constraint firstAttribute="trailing" secondItem="mRN-CN-Gsu" secondAttribute="trailing" constant="8" id="FlT-oX-uw9"/>
+                                    <constraint firstItem="mRN-CN-Gsu" firstAttribute="leading" secondItem="v3U-jc-BMX" secondAttribute="leading" constant="8" id="RTd-cd-Y5K"/>
+                                    <constraint firstItem="TWL-BX-YkF" firstAttribute="top" secondItem="v3U-jc-BMX" secondAttribute="top" constant="8" id="Vci-bD-SsK"/>
+                                    <constraint firstItem="mRN-CN-Gsu" firstAttribute="top" secondItem="GRS-Qo-ES7" secondAttribute="bottom" constant="11" id="awv-fB-iEC"/>
+                                    <constraint firstItem="GRS-Qo-ES7" firstAttribute="top" secondItem="TWL-BX-YkF" secondAttribute="bottom" constant="20" id="iC4-km-h5G"/>
+                                    <constraint firstItem="TWL-BX-YkF" firstAttribute="leading" secondItem="v3U-jc-BMX" secondAttribute="leading" constant="8" id="iEU-eP-5YC"/>
+                                    <constraint firstAttribute="trailing" secondItem="GRS-Qo-ES7" secondAttribute="trailing" constant="8" id="nhS-5L-e1G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v3U-jc-BMX" firstAttribute="leading" secondItem="6P1-UA-cY9" secondAttribute="leading" constant="8" id="2aD-Ei-RvU"/>
+                            <constraint firstItem="v3U-jc-BMX" firstAttribute="centerX" secondItem="6P1-UA-cY9" secondAttribute="centerX" id="QRw-WR-VQX"/>
+                            <constraint firstItem="v3U-jc-BMX" firstAttribute="centerY" secondItem="6P1-UA-cY9" secondAttribute="centerY" id="Rwa-qe-aOY"/>
+                            <constraint firstAttribute="trailing" secondItem="v3U-jc-BMX" secondAttribute="trailing" constant="8" id="oLV-BS-5Tw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DBU-zM-vld"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmTemperatureButton" destination="mRN-CN-Gsu" id="pt2-ey-xEF"/>
+                        <outlet property="foregroundView" destination="v3U-jc-BMX" id="psw-AN-4OZ"/>
+                        <outlet property="temperatureLabel" destination="TWL-BX-YkF" id="c1I-2g-plt"/>
+                        <outlet property="temperatureSlider" destination="GRS-Qo-ES7" id="JKk-SZ-eCQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4N-2b-ayk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2113.125" y="130.98591549295776"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="ST8-V1-bVb">

@@ -43,7 +43,7 @@ class LoginViewController: UIViewController
     {
         if segue.identifier == "showReadingViewController" {
             let backButton = UIBarButtonItem()
-            backButton.title = "Logout"
+            backButton.title = NSLocalizedString("NAVIGATION BAR LEFT BUTTON TITLE", comment: "")
             navigationItem.backBarButtonItem = backButton
             
             if let destinationVC = segue.destination as? ReadingViewController {
@@ -87,7 +87,7 @@ class LoginViewController: UIViewController
         emailField.placeholder = NSLocalizedString("LOGIN EMAIL FIELD PLACEHOLDER", comment: "")
         passwordField.placeholder = NSLocalizedString("LOGIN PASSWORD FIELD PLACEHOLDER", comment: "")
         loginButton.setTitle(NSLocalizedString("LOGIN BUTTON TITLE", comment: ""), for: .normal)
-        loginButton.loginButtonStyling(font: .loginButtonFont, height: loginButton.frame.size.height)
+        loginButton.confirmButtonStyling(font: .loginButtonFont, height: loginButton.frame.size.height)
         
         self.view.backgroundColor = .backgroundColor
         
