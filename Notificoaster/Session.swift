@@ -44,17 +44,31 @@ class Session
         }
     }
     
-    func save(deviceID: String)
+    func save(deviceID: String, targetTemp: Int)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
         
         let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Device", in: managedContext)!
-        let device = NSManagedObject(entity: entity, insertInto: managedContext)
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Device")
         
-        device.setValue(deviceID, forKey: "deviceID")
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            if results.count > 0 {
+                results[0].setValue(targetTemp, forKey: "targetTemp")
+            }
+            else {
+                let entity = NSEntityDescription.entity(forEntityName: "Device", in: managedContext)!
+                let device = NSManagedObject(entity: entity, insertInto: managedContext)
+                
+                device.setValue(deviceID, forKey: "deviceID")
+                device.setValue(targetTemp, forKey: "targetTemp")
+            }
+
+        } catch let error as NSError {
+            print("Error fetching \(error)")
+        }
         
         do {
             try managedContext.save()

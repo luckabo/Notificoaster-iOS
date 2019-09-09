@@ -19,13 +19,16 @@ class LoginViewController: UIViewController
     @IBOutlet var loginButton : UIButton!
     
     var deviceID : String = ""
+    var targetTemperature : Int = 0
     
     @objc func login(_ sender: AnyObject?)
     {
-        Session().login(email: emailField.text!, password: passwordField.text!) { (login) in
+        let session = Session()
+        session.login(email: emailField.text!, password: passwordField.text!) { (login) in
             if login["deviceID"] != nil {
                 self.deviceID = login["deviceID"] as! String
-                Session().save(deviceID: self.deviceID)
+                self.targetTemperature = 12 // hardcode this for now
+                session.save(deviceID: self.deviceID, targetTemp: self.targetTemperature)
                 DispatchQueue.main.async {
                     self.performSegue(withIdentifier: "showReadingViewController", sender: self)
                 }
@@ -48,6 +51,7 @@ class LoginViewController: UIViewController
             
             if let destinationVC = segue.destination as? ReadingViewController {
                 destinationVC.deviceId = deviceID
+                destinationVC.targetTemperature = targetTemperature
             }
         }
     }
@@ -67,6 +71,7 @@ class LoginViewController: UIViewController
             let results = try managedContext.fetch(fetchRequest)
             if results.count > 0 {
                 deviceID = results[0].value(forKey: "deviceID") as! String
+                targetTemperature = results[0].value(forKey: "targetTemp") as! Int
                 DispatchQueue.main.async {
                     self.performSegue(withIdentifier: "showReadingViewController", sender: self)
                 }

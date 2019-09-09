@@ -21,6 +21,7 @@ class ReadingViewController: UIViewController
     
     var readingArray = [Reading]();
     var deviceId: String = ""
+    var targetTemperature: Int!
     
     lazy var dateFormatter : DateFormatter = {
         let formatter = DateFormatter()
@@ -39,7 +40,8 @@ class ReadingViewController: UIViewController
     @objc func updateTemperature(sender:UIButton)
     {
         let modalViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "temperatureUpdateViewController") as! TemperatureUpdateViewController
-        modalViewController.targetTemperature = Constants.TargetTemperature // this will need to be updated
+        modalViewController.targetTemperature = targetTemperature
+        modalViewController.deviceID = deviceId
         modalViewController.modalPresentationStyle = .overCurrentContext
         self.present(modalViewController, animated: true, completion: nil)
     }
@@ -76,8 +78,8 @@ class ReadingViewController: UIViewController
         let dataSet = LineChartDataSet(values: values, label: nil)
         
         // make straight horizontal line dataset of two items
-        let horizontalPoint1 = ChartDataEntry(x: 0, y: Double(Constants.TargetTemperature))
-        let horizontalPoint2 = ChartDataEntry(x: (values.last?.x)!, y: Double(Constants.TargetTemperature))
+        let horizontalPoint1 = ChartDataEntry(x: 0, y: Double(targetTemperature))
+        let horizontalPoint2 = ChartDataEntry(x: (values.last?.x)!, y: Double(targetTemperature))
         let dataSet2 = LineChartDataSet(values: [horizontalPoint1, horizontalPoint2], label: nil)
 
         
@@ -135,7 +137,7 @@ class ReadingViewController: UIViewController
         super.viewDidLoad()
         
         // Style the lables and set initial value
-        valueLabels[0].text = Constants.TargetTemperatureText
+        valueLabels[0].text = "\(targetTemperature ?? Constants.TargetTemperature)°C"
         valueLabels[1].text = NSLocalizedString("VALUE LABEL INITIAL TEXT 1", comment: "")
         valueLabels[2].text = NSLocalizedString("VALUE LABEL INITIAL TEXT 2", comment: "")
         
