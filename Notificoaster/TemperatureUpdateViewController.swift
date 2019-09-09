@@ -26,7 +26,8 @@ class TemperatureUpdateViewController: UIViewController
         if let navController = presentingViewController as? UINavigationController {
             let presenter = navController.topViewController as! ReadingViewController
             presenter.targetTemperature = targetTemperature
-            presenter.valueLabels[0].text = "\(targetTemperature ?? 0)°C"            
+            presenter.valueLabels[0].text = "\(targetTemperature ?? 0)°C"
+            presenter.setChartValues(readings: presenter.readingArray)
         }
         dismiss(animated: true, completion: nil)
     }
@@ -42,14 +43,25 @@ class TemperatureUpdateViewController: UIViewController
     {
         super.viewDidLoad()
         
-        // update label and slider values to match current target temperature
+        // Configure starting text and styling
         temperatureLabel.text = "\(targetTemperature ?? Constants.TargetTemperature)°C"
+        temperatureLabel.font = .descriptionLabelFont
+        temperatureLabel.textColor = UIColor.white
+        confirmTemperatureButton.setTitle(NSLocalizedString("CONFIRM BUTTON TEXT", comment: ""), for: .normal)
+        confirmTemperatureButton.confirmButtonStyling(font: .loginButtonFont, height: confirmTemperatureButton.frame.size.height)
+        
+        foregroundView.backgroundColor = .backgroundColor
+        foregroundView.layer.cornerRadius = 8.0
+        foregroundView.layer.borderWidth = 2.0
+        foregroundView.layer.borderColor = UIColor.gray.cgColor
+        foregroundView.clipsToBounds = true
+        
+        // Configure slider starting temperature
         temperatureSlider.value = Float(targetTemperature)
         
         // set the view to be transparent
-        view.backgroundColor = UIColor.clear
-        view.isOpaque = false
-        
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+
         // add targets to items
         temperatureSlider.addTarget(self, action: #selector(sliderValueChanged(sender:)), for: .allEvents)
         confirmTemperatureButton.addTarget(self, action: #selector(confirmTemperature(sender:)), for: .touchUpInside)
