@@ -39,6 +39,7 @@
 		FB2A818E221B6392003C7D26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB31C48F2321EBB800279EDD /* MainScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreen.png; sourceTree = "<group>"; };
 		FB31C4912321ED2900279EDD /* LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreen.png; sourceTree = "<group>"; };
+		FB41717B232A198C00C65EFC /* Notificoaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notificoaster.entitlements; sourceTree = "<group>"; };
 		FB6B6F742315D5F4006BFE87 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notificoaster.xcdatamodel; sourceTree = "<group>"; };
 		FB8FC49A23248AB900B7D40E /* Devnotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Devnotes.txt; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		FB9DDC6421C8540800875641 /* Notificoaster */ = {
 			isa = PBXGroup;
 			children = (
+				FB41717B232A198C00C65EFC /* Notificoaster.entitlements */,
 				FB9DDC6521C8540800875641 /* AppDelegate.swift */,
 				FB9DDC6C21C8540900875641 /* Assets.xcassets */,
 				FB2A818E221B6392003C7D26 /* Constants.swift */,

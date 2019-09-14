@@ -3,8 +3,9 @@
     <entity name="Device" representedClassName="Device" syncable="YES" codeGenerationType="class">
         <attribute name="deviceID" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="targetTemp" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Device" positionX="-45" positionY="0" width="128" height="75"/>
+        <element name="Device" positionX="-45" positionY="0" width="128" height="90"/>
     </elements>
 </model>

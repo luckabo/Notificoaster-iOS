@@ -27,8 +27,9 @@ class LoginViewController: UIViewController
         session.login(email: emailField.text!, password: passwordField.text!) { (login) in
             if login["deviceID"] != nil {
                 self.deviceID = login["deviceID"] as! String
-                self.targetTemperature = 12 // hardcode this for now
-                session.save(deviceID: self.deviceID, targetTemp: self.targetTemperature)
+                self.targetTemperature = login["targetTemperature"] as! Int
+                let userID = login["_id"] as! String
+                session.save(deviceID: self.deviceID, userID: userID, targetTemp: self.targetTemperature)
                 DispatchQueue.main.async {
                     self.performSegue(withIdentifier: "showReadingViewController", sender: self)
                 }

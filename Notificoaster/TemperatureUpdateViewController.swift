@@ -21,13 +21,26 @@ class TemperatureUpdateViewController: UIViewController
     @objc func confirmTemperature(sender: UIButton)
     {
         targetTemperature = Int(temperatureSlider.value)
-        Session().save(deviceID: deviceID, targetTemp: targetTemperature)
         
+        let session = Session()
+        let userID = session.fetchUserID()
+        session.save(deviceID: deviceID, userID: userID, targetTemp: targetTemperature)
+        session.updateTargetTemperature(targetTemp: targetTemperature, userID: userID) { (updatedObject) in
+            if updatedObject["targetTemperature"] as? Int == self.targetTemperature {
+                print("updated")
+            }
+            else {
+                print("not updated")
+            }
+        }
+    
         if let navController = presentingViewController as? UINavigationController {
             let presenter = navController.topViewController as! ReadingViewController
             presenter.targetTemperature = targetTemperature
             presenter.valueLabels[0].text = "\(targetTemperature ?? 0)°C"
-            presenter.setChartValues(readings: presenter.readingArray)
+            if presenter.readingArray.count > 0 {
+                presenter.setChartValues(readings: presenter.readingArray)
+            }
         }
         dismiss(animated: true, completion: nil)
     }
