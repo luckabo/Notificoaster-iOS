@@ -11,7 +11,7 @@ import UIKit
 import CoreData
 
 
-class LoginViewController: UIViewController
+class LoginViewController: UIViewController, UITextFieldDelegate
 {
     @IBOutlet var titleLabel : UILabel!
     @IBOutlet var emailField : UITextField!
@@ -39,6 +39,12 @@ class LoginViewController: UIViewController
                 print("user not found")
             }
         }
+    }
+    // MARK: - UITextFieldDelegate
+    func textFieldShouldReturn(_ sender: UITextField) -> Bool
+    {
+        sender.resignFirstResponder()
+        return true
     }
     
     
@@ -99,5 +105,11 @@ class LoginViewController: UIViewController
         
         // Configure login button
         loginButton.addTarget(self, action: #selector(LoginViewController.login(_:)), for: .touchUpInside)
+        
+        // Configure keyboards
+        passwordField.returnKeyType = UIReturnKeyType.done
+        emailField.returnKeyType = UIReturnKeyType.done
+        passwordField.delegate = self
+        emailField.delegate = self
     }
 }
