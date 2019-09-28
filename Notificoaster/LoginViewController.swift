@@ -29,7 +29,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate
                 self.deviceID = login["deviceID"] as! String
                 self.targetTemperature = login["targetTemperature"] as! Int
                 let userID = login["_id"] as! String
-                session.save(deviceID: self.deviceID, userID: userID, targetTemp: self.targetTemperature)
+                let phoneID = UserDefaults.standard.string(forKey: "phoneID")
+                session.save(deviceID: self.deviceID, userID: userID, targetTemp: self.targetTemperature, phoneID: phoneID ?? "xyz")
                 DispatchQueue.main.async {
                     self.performSegue(withIdentifier: "showReadingViewController", sender: self)
                 }
@@ -40,6 +41,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate
             }
         }
     }
+    
     // MARK: - UITextFieldDelegate
     func textFieldShouldReturn(_ sender: UITextField) -> Bool
     {

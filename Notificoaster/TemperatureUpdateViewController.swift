@@ -24,7 +24,8 @@ class TemperatureUpdateViewController: UIViewController
         
         let session = Session()
         let userID = session.fetchUserID()
-        session.save(deviceID: deviceID, userID: userID, targetTemp: targetTemperature)
+        let phoneID = session.fetchPhoneID()
+        session.save(deviceID: deviceID, userID: userID, targetTemp: targetTemperature, phoneID: phoneID)
         session.updateTargetTemperature(targetTemp: targetTemperature, userID: userID) { (updatedObject) in
             if updatedObject["targetTemperature"] as? Int == self.targetTemperature {
                 print("updated")

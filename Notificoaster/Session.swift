@@ -64,10 +64,30 @@ class Session
         return userID
     }
     
+    func fetchPhoneID() -> String
+    {
+        var phoneID = String()
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Device")
+        
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            if results.count > 0 {
+                phoneID = results[0].value(forKey: "phoneID") as! String
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error)")
+        }
+        return phoneID
+    }
+    
     func updateTargetTemperature(targetTemp: Int, userID: String, completion: @escaping ([String: Any]) -> Void) -> Void
     {
         var updatedObject = [String: Any]()
-        let urlString = Constants.baseURL + "/" + Constants.updateTarget + userID
+        let urlString = Constants.baseURL + "/" + Constants.updateUser + userID
         let url = URL(string: urlString)
         
         var req = URLRequest(url: url!)
@@ -94,7 +114,37 @@ class Session
         }
     }
     
-    func save(deviceID: String, userID: String, targetTemp: Int)
+    func updatePhoneID(phoneID: Int, userID: String, completion: @escaping ([String: Any]) -> Void) -> Void
+    {
+        var updatedObject = [String: Any]()
+        let urlString = Constants.baseURL + "/" + Constants.updateUser + userID
+        let url = URL(string: urlString)
+        
+        var req = URLRequest(url: url!)
+        req.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        req.httpMethod = "PATCH"
+        
+        let json: [String: Any] = ["phoneID": phoneID]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        req.httpBody = jsonData
+        
+        DispatchQueue.main.async {
+            let task = URLSession.shared.dataTask(with: req) { data, response, error in
+                guard let data = data, error == nil else {
+                    print(error?.localizedDescription ?? "No data")
+                    return
+                }
+                let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+                if (responseJSON as? [String: Any]) != nil {
+                    updatedObject = responseJSON as! [String : Any]
+                }
+                completion(updatedObject)
+            }
+            task.resume()
+        }
+    }
+    
+    func save(deviceID: String, userID: String, targetTemp: Int, phoneID: String)
     {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -115,6 +165,7 @@ class Session
                 device.setValue(deviceID, forKey: "deviceID")
                 device.setValue(userID, forKey: "userID")
                 device.setValue(targetTemp, forKey: "targetTemp")
+                device.setValue(phoneID, forKey: "phoneID")
             }
 
         } catch let error as NSError {
@@ -146,5 +197,6 @@ class Session
         } catch let error as NSError {
             print("could not delete \(error)")
         }
+        UserDefaults.standard.removeObject(forKey: "phoneID")
     }
 }
