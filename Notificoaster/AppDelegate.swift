@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import UserNotifications
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -27,9 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Remove '<' from back button in all view controllers
         UINavigationBar.appearance().backIndicatorImage = UIImage()
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage()
-        
+
         registerForPushNotifications()
-        
         return true
     }
 
@@ -97,7 +97,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
     // MARK: - Push Notifications
     func registerForPushNotifications() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { [weak self] granted, error in

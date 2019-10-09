@@ -17,13 +17,19 @@
 		FB31C4922321ED2900279EDD /* LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31C4912321ED2900279EDD /* LoginScreen.png */; };
 		FB6B6F752315D5F4006BFE87 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F742315D5F4006BFE87 /* Session.swift */; };
 		FB6B6F78231600B0006BFE87 /* Notificoaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB6B6F76231600B0006BFE87 /* Notificoaster.xcdatamodeld */; };
+<<<<<<< HEAD
 		FB8FC49B23248AB900B7D40E /* Devnotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB8FC49A23248AB900B7D40E /* Devnotes.txt */; };
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 		FB9DDC6621C8540800875641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6521C8540800875641 /* AppDelegate.swift */; };
 		FB9DDC6821C8540800875641 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9DDC6721C8540800875641 /* ReadingViewController.swift */; };
 		FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6921C8540800875641 /* Main.storyboard */; };
 		FB9DDC6D21C8540900875641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6C21C8540900875641 /* Assets.xcassets */; };
 		FB9DDC7021C8540900875641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB9DDC6E21C8540900875641 /* LaunchScreen.storyboard */; };
+<<<<<<< HEAD
 		FBB5E55F23247BAA000904AB /* TemperatureUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5E55E23247BAA000904AB /* TemperatureUpdateViewController.swift */; };
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 		FBEA1E382317355100ADEC42 /* UIFont-Notificoaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEA1E372317355100ADEC42 /* UIFont-Notificoaster.swift */; };
 		FBF0A0DD21EEAC4B00D22918 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A0DC21EEAC4B00D22918 /* Reading.swift */; };
 		FBF0A0DF21EEAC5900D22918 /* ReadingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF0A0DE21EEAC5900D22918 /* ReadingRequest.swift */; };
@@ -39,10 +45,15 @@
 		FB2A818E221B6392003C7D26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB31C48F2321EBB800279EDD /* MainScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainScreen.png; sourceTree = "<group>"; };
 		FB31C4912321ED2900279EDD /* LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginScreen.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		FB41717B232A198C00C65EFC /* Notificoaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Notificoaster.entitlements; sourceTree = "<group>"; };
 		FB6B6F742315D5F4006BFE87 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notificoaster.xcdatamodel; sourceTree = "<group>"; };
 		FB8FC49A23248AB900B7D40E /* Devnotes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Devnotes.txt; sourceTree = "<group>"; };
+=======
+		FB6B6F742315D5F4006BFE87 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		FB6B6F77231600B0006BFE87 /* Notificoaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notificoaster.xcdatamodel; sourceTree = "<group>"; };
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 		FB9DDC6221C8540800875641 /* Notificoaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notificoaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9DDC6521C8540800875641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB9DDC6721C8540800875641 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +61,10 @@
 		FB9DDC6C21C8540900875641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB9DDC6F21C8540900875641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB9DDC7121C8540900875641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		FBB5E55E23247BAA000904AB /* TemperatureUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureUpdateViewController.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 		FBEA1E372317355100ADEC42 /* UIFont-Notificoaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont-Notificoaster.swift"; sourceTree = "<group>"; };
 		FBF0A0DC21EEAC4B00D22918 /* Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		FBF0A0DE21EEAC5900D22918 /* ReadingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRequest.swift; sourceTree = "<group>"; };
@@ -116,11 +130,17 @@
 		FB9DDC6421C8540800875641 /* Notificoaster */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				FB41717B232A198C00C65EFC /* Notificoaster.entitlements */,
 				FB9DDC6521C8540800875641 /* AppDelegate.swift */,
 				FB9DDC6C21C8540900875641 /* Assets.xcassets */,
 				FB2A818E221B6392003C7D26 /* Constants.swift */,
 				FB8FC49A23248AB900B7D40E /* Devnotes.txt */,
+=======
+				FB9DDC6521C8540800875641 /* AppDelegate.swift */,
+				FB9DDC6C21C8540900875641 /* Assets.xcassets */,
+				FB2A818E221B6392003C7D26 /* Constants.swift */,
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 				FB9DDC7121C8540900875641 /* Info.plist */,
 				FB9DDC6E21C8540900875641 /* LaunchScreen.storyboard */,
 				FB2A818C221B5FA4003C7D26 /* Localizable.strings */,
@@ -136,7 +156,10 @@
 				FB152EFC23148B7E00297843 /* UIButton-Notificoaster.swift */,
 				FB152EFA23148B5D00297843 /* UIColor-Notificoaster.swift */,
 				FBEA1E372317355100ADEC42 /* UIFont-Notificoaster.swift */,
+<<<<<<< HEAD
 				FBB5E55E23247BAA000904AB /* TemperatureUpdateViewController.swift */,
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 			);
 			path = Notificoaster;
 			sourceTree = "<group>";
@@ -214,7 +237,10 @@
 				FB9DDC6D21C8540900875641 /* Assets.xcassets in Resources */,
 				FB31C4922321ED2900279EDD /* LoginScreen.png in Resources */,
 				FB31C4902321EBB800279EDD /* MainScreen.png in Resources */,
+<<<<<<< HEAD
 				FB8FC49B23248AB900B7D40E /* Devnotes.txt in Resources */,
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 				FB9DDC6B21C8540800875641 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				FBB5E55F23247BAA000904AB /* TemperatureUpdateViewController.swift in Sources */,
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
 				FB6B6F752315D5F4006BFE87 /* Session.swift in Sources */,
 				FB152EF9231482B800297843 /* LoginViewController.swift in Sources */,
 				FB9DDC6821C8540800875641 /* ReadingViewController.swift in Sources */,

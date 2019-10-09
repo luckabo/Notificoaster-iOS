@@ -84,12 +84,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" id="5r9-Jd-Eip">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="7ij-FB-6rV"/>
                     </navigationItem>
                     <connections>
                         <outlet property="lineChartView" destination="oxd-Ta-8Tw" id="9R5-bF-E7C"/>
                         <outlet property="updateTemperatureButton" destination="7ij-FB-6rV" id="cwp-cj-EP0"/>
+=======
+                    <navigationItem key="navigationItem" id="5r9-Jd-Eip"/>
+                    <connections>
+                        <outlet property="lineChartView" destination="oxd-Ta-8Tw" id="9R5-bF-E7C"/>
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
                         <outletCollection property="valueLabels" destination="4Gm-4s-b0I" collectionClass="NSMutableArray" id="Fb4-ic-Pc1"/>
                         <outletCollection property="valueLabels" destination="cW3-R5-H8Q" collectionClass="NSMutableArray" id="ogd-zs-lMd"/>
                         <outletCollection property="valueLabels" destination="ePL-3o-TIp" collectionClass="NSMutableArray" id="G7r-0m-lN8"/>
@@ -102,6 +108,7 @@
             </objects>
             <point key="canvasLocation" x="1296" y="131"/>
         </scene>
+<<<<<<< HEAD
         <!--Temperature Update View Controller-->
         <scene sceneID="oER-qc-gH9">
             <objects>
@@ -162,6 +169,8 @@
             </objects>
             <point key="canvasLocation" x="2113.125" y="130.98591549295776"/>
         </scene>
+=======
+>>>>>>> 129d2a04a57b00eb940167bfcc58b1186b4fc63b
         <!--Login View Controller-->
         <scene sceneID="ST8-V1-bVb">
             <objects>
