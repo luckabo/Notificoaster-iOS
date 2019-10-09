@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-fileprivate let intervalTime = 30.0
+fileprivate let intervalTime = 60.0
 
 
 class ReadingViewController: UIViewController
